@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width:100%;
+            flex: content;
+            margin-top:2%;
+           
+            
+        }
+        h1{
+            font-size:262%;
+            padding:5%;
+            font-family: sans-serif;
+        }
+        p{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:100%;flex: content;" >
+    
+        
+
+        <nav style="background-image: url(data:image/png;base64,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);background-repeat: no-repeat;background-size: contain;min-height: 40px;line-height: 40px;text-align:left;margin-left: 10px;text-decoration: dotted;background-color:white;padding: 10px;word-spacing: 100px;">&nbsp;
+                <a href="https://play.google.com/store/games" style="color: black;text-decoration: none;">Games</a>
+                <a href="https://play.google.com/store/apps" style="color: black;text-decoration: none;">Apps</a>
+                <a href="https://play.google.com/store/movies" style="color: black;text-decoration: none;">Movies</a>
+                <a href="https://play.google.com/store/books" style="color: black;text-decoration: none;">Books</a>
+                <a href="https://play.google.com/store/apps/category/FAMILY" style="color: black;text-decoration: none;">Kids</a>&nbsp;&nbsp;&nbsp;
+                <span>&#128269;</span>	
+                 </nav>
+
+
+        <br>
+    </div>
+
+
+    <div id="div1">
+
+   <h1>Shopsy Shopping App - Flipkart</h1> 
+   <img src="https://play-lh.googleusercontent.com/Ornb14bIU5LtffQy9wwf1bjPP27s7sLG9VyXE5mJyf4Hy585RZcOTERMd93Apjunjzw=w240-h480-rw"  style="margin-left:78%;margin-top:-13%;border-radius:30px;">
+     
+    <div style="left:10%;width:30%;margin-left:5%;margin-top:-3%;">
+     <span >
+        4.2  star <br>
+       8.1M reviews &nbsp;|100M+ Downloads &nbsp; |&nbsp; Rated for 3+  info
+   </span>
+
+   <br><br><br>
+   <button style="width:30%;height:30px;border-radius:2px 2px 2px 2px;background-color: green;">Install</button> &nbsp;&nbsp;   <img src="https://play-lh.googleusercontent.com/iFstqoxDElUVv4T3KxkxP3OTcuFvWF5ZQQjT7aIxy4n2uaVigCCykxeG6EZV9FQ10X1itPj1oORm=s20-rw" srcset="https://play-lh.googleusercontent.com/iFstqoxDElUVv4T3KxkxP3OTcuFvWF5ZQQjT7aIxy4n2uaVigCCykxeG6EZV9FQ10X1itPj1oORm=s40-rw 2x" class="T75of whEyae" aria-hidden="true" alt="Icon image" data-atf="false" data-iml="2353">SHARE &nbsp;&nbsp;&nbsp;🈷 ADD TO WISH LIST
+
+    <div></div>
+    
+
+    </div>
+
+    <div >
+        <img src="https://play-lh.googleusercontent.com/R6orMSrDUXTWsFsTVyFiQRMk_kjeTFro7gaP5EFpSHS8M_kItgwS1Ok__ui5k7cWlJKq=w526-h296-rw" role="button" style="margin-left:10%;margin-top:3%;">
+        <img src="https://play-lh.googleusercontent.com/m5yr48HNujzClFVJPL7SwAtJp7EjJyvpCspF7TUIflh6nQ5ZB3grYrcu_u_zcKCQqrk=w526-h296-rw" role="button" style="margin-left:2%;margin-top:3%;">
+        <img src="https://play-lh.googleusercontent.com/4eD9YfUzosInC7fQTZxyH0My02o4M5gut-CNi102N9xBkNtJT-XO_Ho5xZEb2NFesw=w526-h296-rw" role="button" style="margin-left:2%;margin-top:3%;">
+        <img src="https://play-lh.googleusercontent.com/BcyNjkCZzwkqos940cx-m9nLfGNcQNRwqp_5T4IE9vkLk3mzEyVXdY1Ydy3xBtstTQ=w526-h296-rw" role="button" style="margin-left:2%;margin-top:3%;">
+        <img src="https://play-lh.googleusercontent.com/w8X020eVs1WJ4QQDsEMyaCLZt-GinDb7YF4AStlT34zxT741ccLeK1ii9A1Kgm-4Mw=w526-h296-rw" role="button" style="margin-left:2%;margin-top:3%;">
+
+        <p>
+            <h1 style="color: rgb(24, 21, 21);">
+               <small>About this app ➡ </small>
+             </h1>
+           <h3 style="color: rgb(29, 24, 24); margin-left:5%;margin-top:-5%;">Shopsy is now India's Most Favorite App. <br>
+            Voted by millions of users as Google Play Best Of Users' Choice Award 2022. <br> <br>
+            #GooglePlayBestOf
+            <br><br>
+            Shop online for Fashion, Beauty, footwear, and accessories at the best prices.
+
+        
+        </h3>
+        <h4 style="color: grey; margin-left:5%;">
+            Updated on <br> <br>
+             Sep 5, 2023
+
+        </h4>
+        <br><br><br>
+
+        <button style="background-color: grey;width:10%;margin-left:4%;border-radius:10px;height:30px;">#2 top shopping</button> &nbsp;  <button style="background-color: grey;width:10%;margin-left:4%;border-radius:10px;height:30px;">#2 top shopping</button>
+
+        </p>
+
+        <p >
+            <h2 style="margin-left:5%;color:rgb(39, 38, 38);">Data Saftey ➡</h2>
+
+            <h4 style="margin-left:5%;color:rgb(39, 38, 38);">Safety starts with understanding how developers collect and share your data.
+                 <br> Data privacy and security practices may vary based on your use, region, and age. <br> 
+                 The developer provided this information and may update it over time.</h4>
+      
+                </p>
+        
+        
+    </div>
+
+     <div style="width:60%;border:2px solid grey;margin-left:5%;flex: content;">
+     
+        <div class="XGHsbd"><div class="wGcURe">
+            <img src="https://play-lh.googleusercontent.com/iFstqoxDElUVv4T3KxkxP3OTcuFvWF5ZQQjT7aIxy4n2uaVigCCykxeG6EZV9FQ10X1itPj1oORm=s20-rw" srcset="https://play-lh.googleusercontent.com/iFstqoxDElUVv4T3KxkxP3OTcuFvWF5ZQQjT7aIxy4n2uaVigCCykxeG6EZV9FQ10X1itPj1oORm=s40-rw 2x" class="T75of whEyae" aria-hidden="true" alt="Icon image" data-atf="false" data-iml="2353">
+            <div>This app may share these data types with third parties<div class="jECfAf">Location, Personal info and 4 others</div></div></div>
+            <div class="wGcURe"><img src="https://play-lh.googleusercontent.com/12USW7aflgz466ifDehKTnMoAep_VHxDmKJ6jEBoDZWCSefOC-ThRX14Mqe0r8KF9XCzrpMqJts=s20-rw" srcset="https://play-lh.googleusercontent.com/12USW7aflgz466ifDehKTnMoAep_VHxDmKJ6jEBoDZWCSefOC-ThRX14Mqe0r8KF9XCzrpMqJts=s40-rw 2x" class="T75of whEyae" aria-hidden="true" alt="Icon image" data-atf="false" data-iml="2353">
+            <div>This app may collect these data types<div class="jECfAf">Location, Personal info and 5 others</div></div></div><div class="wGcURe">
+                <img src="https://play-lh.googleusercontent.com/W5DPtvB8Fhmkn5LbFZki_OHL3ZI1Rdc-AFul19UK4f7np2NMjLE5QquD6H0HAeEJ977u3WH4yaQ=s20-rw" srcset="https://play-lh.googleusercontent.com/W5DPtvB8Fhmkn5LbFZki_OHL3ZI1Rdc-AFul19UK4f7np2NMjLE5QquD6H0HAeEJ977u3WH4yaQ=s40-rw 2x" class="T75of whEyae" aria-hidden="true" alt="Icon image" data-atf="false" data-iml="2353"><div>Data is encrypted in transit</div></div>
+                <div class="wGcURe"><img src="https://play-lh.googleusercontent.com/neRBP16KYqhC7f1N3vUT1Q_HMLwAw7vXu8aOWOqvlY3JXNGd8qyXVNyAQyNLpdUdCV0kYEs9BXk=s20-rw" srcset="https://play-lh.googleusercontent.com/neRBP16KYqhC7f1N3vUT1Q_HMLwAw7vXu8aOWOqvlY3JXNGd8qyXVNyAQyNLpdUdCV0kYEs9BXk=s40-rw 2x" class="T75of whEyae" aria-hidden="true" alt="Icon image" data-atf="false" data-iml="2353"><div>Data can’t be deleted</div></div><div class="u4ICaf">
+                    <div class="VfPpkd-dgl2Hf-ppHlrf-sM5MNb" data-is-touch-wrapper="true">
+                    <div class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 aLey0c qQhJce" jscontroller="nKuFpb" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;" data-disable-idom="true" jslog="144115; 1:1908; track:click;">
+                        <div class="VfPpkd-Jh9lGc"></div><span jsname="V67aGc" class="VfPpkd-vQzf8d" aria-hidden="true">See details</span><a class="WpHeLc VfPpkd-mRLv6 VfPpkd-RLmnJb" href="/store/apps/datasafety?id=com.flipkart.shopsy" aria-label="See more details on data safety" jsname="hSRGPd"></a><div class="VfPpkd-J1Ukfc-LhBDec"></div></div></div></div></div>
+
+     </div>
+  <br><br>
+
+  
+
+
+</body>
+</html>
